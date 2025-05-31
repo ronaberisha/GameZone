@@ -1,0 +1,89 @@
+body { 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #88C4FF;
+}
+h1.main {
+  background-color: #DDE7FF;
+}
+h1.index {
+  background-color: #B9CBF5;
+}
+body.index {background-color:#B9CBF5;
+}
+body.main{background-color: #88C4FF;}
+	
+.game-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    justify-content: center;
+    width: 320px; /* Fixed width for 2 squares per row */
+    margin: 40px auto;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.red { background-color: red; }
+.blue { background-color: blue; }
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+
+.flash {
+    opacity: 0.4;
+}
+
+
+/* Adding code By Era */
+body.main {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* title */
+h1.main {
+  font-size: 36px;
+  color: #2c3e50;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+}
+
+/* buttons */
+body.main button {
+  display: block;
+  width: 260px;
+  margin: 15px auto;
+  padding: 14px;
+  font-size: 18px;
+  background-color: #4facfe;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+body.main button:hover {
+  background-color: #00c6ff;
+  transform: scale(1.05);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+h1.main {
+  animation: bounce 2s infinite;
+}
